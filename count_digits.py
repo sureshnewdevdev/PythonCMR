@@ -1,3 +1,5 @@
+import dis
+
 def count_digits(text):
     # counter = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     counter = [0] * 10
@@ -16,12 +18,17 @@ def display(digit_counter):
     #print(digits)
     for digit in range(0, 10):
         print(digit, digit_counter[digit])
-
+def method1():
+    a=888
 def main():
     text = "12=34 1119"
     digit_counter = count_digits(text)
 
     display(digit_counter)
+    dis.dis(method1)
 
 main()
+
+
+
 
