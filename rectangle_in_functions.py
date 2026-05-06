@@ -6,7 +6,7 @@ def get_input():
     received_length = input("Length: ")
     received_width = input("Width: ")
 
-    return (received_length, received_width)
+    return received_length, received_width
 
 def compute_area(length, width):
     area = int(length) * int(width)
